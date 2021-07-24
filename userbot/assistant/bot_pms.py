@@ -105,11 +105,11 @@ async def bot_start(event):
         else:
             start_msg = f"Hey! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
-                        \nYou can contact to my master from here.\
-                        \n\nPowered by [Catuserbot](https://t.me/catuserbot)"
+                        \nYou can contact to him from here.\
+                        \n\nPowered by [DOUGLAS](https://t.me/Username_Idarilla)"
         buttons = [
             (
-                Button.url("Join Here", "https://t.me/subin_works")
+                Button.url("Join Here", "https://t.me/Douglas_Works")
             )
         ]
     else:

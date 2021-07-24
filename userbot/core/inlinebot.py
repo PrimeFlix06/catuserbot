@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/5cbd5b11b370e7c52177a.jpg"
+CATLOGO = "https://telegra.ph/file/79a9bc0746a0cf46ab6c6.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -506,7 +506,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("XTZ Bots", "https://t.me/subin_works")
+                Button.url("Visit Here", "https://t.me/Douglas_Works")
             )
         ]
         markup = event.client.build_reply_markup(buttons)
@@ -514,14 +514,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "Join here Plox", "md"
+            "Join here", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
             title="Click Here",
             description="Hey No Dont Click Here",
-            url="https://t.me/subin_works",
+            url="https://t.me/Douglas_Works",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
